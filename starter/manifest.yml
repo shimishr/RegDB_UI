@@ -1,0 +1,10 @@
+applications:
+- name: regdb-ui-app-dev
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  path: ./target/starter-0.0.1-SNAPSHOT.jar
+  routes:
+  - route: regdb-ui-app-dev.apps.eas.pcf.manulife.com
+  services:
+  - jp_service_registry
